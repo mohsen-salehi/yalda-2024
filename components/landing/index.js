@@ -59,7 +59,7 @@ function Index({setStatusPopup}) {
                 <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
             </section>
             <footer
-                className="col-12 my-5 d-flex flex-wrap justify-content-between justify-content-xl-evenly align-items-center link ">
+                className="col-12 my-5 d-flex flex-wrap justify-content-center justify-content-md-between justify-content-xl-evenly align-items-center link ">
                 <img src="img/barg.png" className="img-hendevaneh barg position-absolute d-none d-xl-flex" alt=""/>
                 <Image
                     src={"/img/footer/50.png"} alt={''}
