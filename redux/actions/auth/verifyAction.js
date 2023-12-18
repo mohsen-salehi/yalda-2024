@@ -18,7 +18,7 @@ const verifyAction = (userData) => async dispatch => {
             toast.success(data?.data?.message)
             dispatch(hideLoading())
         } catch (e) {
-            toast.error(e?.response?.data?.messages[0])
+            toast.error(e?.response?.data?.messages)
             dispatch(verifyFailed())
             dispatch(hideLoading())
         }
