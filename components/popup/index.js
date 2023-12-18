@@ -14,7 +14,16 @@ function Index({setStatusPopup, setStatusInvite}) {
         <div className="section  col-11 p-0 col-xl-4 h-75 d-flex justify-content-center align-content-center flex-wrap ">
             <figure
                 className="col-11 col-md-5 col-xl-9  d-flex flex-wrap justify-content-center align-items-center position-relative">
-                <Image src={`/img/fal${number}.png`} width={500} height={600}  className="overflow-hidden" alt=""/>
+                {
+                    request ?(
+                        <Image src={`/img/fal${number}.png`} width={500} height={600}  className="overflow-hidden" alt=""/>
+                    ): (
+                        <div className="spinner-border" role="status">
+                            <span className="sr-only">Loading...</span>
+                        </div>
+                    )
+                }
+
             </figure>
 
             <div
