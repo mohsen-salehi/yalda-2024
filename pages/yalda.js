@@ -16,7 +16,7 @@ export default function Home() {
     const {loading} = useSelector(state => state.loading)
     return (<div className="position-relative">
         <Head>
-            <title>هم فاله،هم هدیه | جشنواره‌ یلدای الانزا</title>
+            <title>هم فاله،هم هدیه | جشنواره چله پر تخفیف الانزا</title>
             <meta name="theme-color" content="#FF304E"/>
             <meta property="og:image" itemProp="image" content="https://elanza.com/assets/global/favicon/og_image.png"/>
             <link rel='canonical' href='https://landing.elanza.com/yalda'/>
@@ -52,9 +52,9 @@ export default function Home() {
                   href="https://elanza.com/assets/global/favicon/favicon-16x16.png"/>
             <meta name="robots" content="index, follow"/>
             <meta name="application-TileImage" content="https://elanza.com/assets/global/favicon/ms-icon-144x144.png"/>
-            <meta name='title' content='هم فاله، هم هدیه | جشنواره یلدا الانزا'/>
+            <meta name='title' content='هم فاله، هم هدیه | جشنواره چله پر تخفیف الانزا'/>
             <meta name='description'
-                  content='محصولات آرایشی بهداشتی با تخفیف های هیجان انگیز از 26 الی 30 آذر ماه 1401 در جشنواره یلدا الانزا'/>
+                  content='محصولات آرایشی بهداشتی با تخفیف های هیجان انگیز از 26 الی 30 آذر ماه 1402 در جشنواره چله الانزا'/>
         </Head>
         <main className='container-fluid font-pinar p-0 m-0 vh-100 main'>
             <Landing setStatusInvite={setStatusInvite} setStatusPopup={setStatusPopup}/>

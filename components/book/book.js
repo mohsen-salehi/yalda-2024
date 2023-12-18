@@ -3,8 +3,10 @@ import {useSelector} from "react-redux";
 
 function Book({setStatusPopup}) {
     const [classStatus, setClassStatus] = useState('')
+    const [disableCounter, setDisableCounter] = useState(false)
     const {request} = useSelector(state => state)
     const getFal = () => {
+        setDisableCounter(true)
         setClassStatus('open')
         setTimeout(() => {
             setStatusPopup(true)
@@ -83,7 +85,8 @@ function Book({setStatusPopup}) {
                 <div className="col-12 d-flex justify-content-center align-items-center">
                     {request?.status === true && (
                         <button onClick={getFal}
-                                className={`col-9 col-xl-3 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
+                                disabled={disableCounter}
+                                className={`${disableCounter && 'bg-secondary'} col-9 col-xl-3 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
                                 title={request?.status ? "" : "ابتدا ثبت نام کنید"}>فال بگیر
                         </button>
                     )}

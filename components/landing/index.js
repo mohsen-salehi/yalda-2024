@@ -3,6 +3,7 @@ import Book from "../book/book";
 import OtpCode from "../form/otpCode";
 import UsernamePassword from "../form/username&password";
 import {useSelector} from "react-redux";
+import Image from "next/image";
 
 function Index({setStatusPopup}) {
 
@@ -44,47 +45,52 @@ function Index({setStatusPopup}) {
                 <h1 dir="rtl" className="d-none d-xl-flex m-0 p-0 text-light">
                     <a href="https://elanza.com"
                        target="_blank"
-                       className="text-decoration-none text-white fw-bold">تخفیف
-                        های یلدایی الانزا
+                       className="text-decoration-none text-white fw-bold">
+                        چله پر تخفیف الانزا
                     </a>
                 </h1>
                 <h1 dir="rtl" className="d-block d-xl-none m-0 p-0 fw-bold text-light">
                     <a href="https://elanza.com"
                        target="_blank"
-                       className="text-decoration-none text-white fw-bold ">تخفیف
-                        های یلدایی الانزا
+                       className="text-decoration-none text-white fw-bold ">
+                        چله پر تخفیف الانزا
                     </a>
                 </h1>
                 <img src="img/barf.png" className="img-hendevaneh img4 d-none d-lg-block" alt=""/>
             </section>
             <footer
-                className="col-12 d-flex flex-wrap justify-content-between justify-content-xl-evenly align-items-center link ">
+                className="col-12 my-5 d-flex flex-wrap justify-content-center justify-content-md-between justify-content-xl-evenly align-items-center link ">
                 <img src="img/barg.png" className="img-hendevaneh barg position-absolute d-none d-xl-flex" alt=""/>
-
-                <a href="https://elanza.com/brand/lafarrerr" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/6لافارر.png" className="img-fluid col-10" alt=""/>
-                </a>
-                <a href="https://elanza.com/category/electrical-care-tools" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/5برقی.png" className="img-fluid col-10" alt=""/>
-                </a>
-                <a href="https://elanza.com/tag/yalda" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/4پکیج-یلدایی.png" className="img-fluid col-10" alt=""/>
-                </a>
-                <a href="https://elanza.com/brand/top-shop" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/3تاپ-شاپ.png" className="img-fluid col-10 " alt=""/>
-                </a>
-                <a href="https://elanza.com/brand/cerita" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/2سریتا.png" className="img-fluid col-10" alt=""/>
-                </a>
-                <a href="https://elanza.com/tag/less-than-100" target="_blank"
-                   className="col-12 col-md-4 col-xl-2 flex-wrap  d-flex justify-content-center align-items-center">
-                    <img src="img/footer/1کمتر-از-صد.png" className="img-fluid col-10" alt=""/>
-                </a>
+                <Image
+                    src={"/img/footer/50.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
+                <Image
+                    src={"/img/footer/60.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
+                <Image
+                    src={"/img/footer/70.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
+                <Image
+                    src={"/img/footer/100.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
+                <Image
+                    src={"/img/footer/150.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
+                <Image
+                    src={"/img/footer/free.png"} alt={''}
+                    width={200}
+                    height={50}
+                />
                 <img src="img/anar.png" className="img-hendevaneh img5 col-12 col-xl-3" alt=""/>
             </footer>
 
