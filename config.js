@@ -4,7 +4,7 @@ const config = {
     }, test: {
         base_url: process.env.NEXT_PUBLIC_TEST_URL || 'https://api.elanzacom.ir/',
     }, production: {
-        base_url: process.env.NEXT_PUBLIC_PRODUCTION_URL ?? 'https://apilanding.elanza.com/',
+        base_url: process.env.NEXT_PUBLIC_PRODUCTION_URL ?? 'https://landing.elanza.com/api/',
     }
 }
 

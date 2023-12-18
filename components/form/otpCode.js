@@ -23,7 +23,7 @@ function OtpCode() {
     return (
         <div className="col-12 flex-wrap col-md-6 p-3 py-5  d-flex justify-content-center">
             <img src="img/hendevaneh.png" className="img-hendevaneh img1  col-2 " alt=""/>
-            <h3 dir="rtl" className="text-center d-flex justify-content-center align-content-between flex-wrap text-white fw-bold" >کد تایید را وارد کنید</h3>
+            <h3 dir="rtl" className="text-center d-flex justify-content-center align-content-between flex-wrap text-white fw-bold" >کد تایید رو وارد کن</h3>
             <form onSubmit={formHandler} dir="rtl"
                   className="col-12 p-2  rounded d-flex justify-content-center align-content-between flex-wrap">
                 <label className="col-12 d-flex justify-content-center align-items-center my-2">
