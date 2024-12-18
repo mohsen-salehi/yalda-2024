@@ -1,7 +1,5 @@
-import Head from 'next/head'
-
 import Landing from "../components/landing";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Popup from "../components/popup";
 import Invite from "../components/invite";
 import Alertify from "../components/alertify";

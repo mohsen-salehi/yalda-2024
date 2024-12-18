@@ -828,8 +828,7 @@ img {
 }
 
 .banner-center {
-  background-attachment: fixed;
-  background-image: linear-gradient(to right, #FE6A6E, #FF006A);
+  background: linear-gradient(90deg, #6A1918 0%, #D0312F 100%) fixed;
 }
 
 .popup {

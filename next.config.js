@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-
-module.exports = {
-  nextConfig,
-  redirects() {
+  async redirects() {
     return [
       {
         source: '/',
@@ -15,3 +11,6 @@ module.exports = {
     ]
   }
 }
+
+module.exports = nextConfig
+
