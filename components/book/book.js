@@ -5,7 +5,7 @@ import ResponsiveOTPModal from "../modal/ResponsiveModal";
 import requestSlice from "../../redux/reducers/auth/requestSlice";
 
 function Book({setStatusPopup}) {
-    const {requestOTP ,  requestFailed} = requestSlice.actions;
+    const {requestOTP, requestFailed} = requestSlice.actions;
     const [classStatus, setClassStatus] = useState('')
     const [disableCounter, setDisableCounter] = useState(false)
     const {request} = useSelector(state => state)
@@ -96,15 +96,17 @@ function Book({setStatusPopup}) {
                     <>
                         <figure className={"w-100 d-flex d-md-none align-items-end position-relative"}
                                 style={{height: "400px"}}>
-                            <img src={"/img/book-desk-fruit.svg"} className={"position-absolute top-0 l-0"}
-                                 width={354}
-                                 style={{scale : "1.2"}}
-                                 height={233} alt={""}/>
+                            <Image src={"/img/book-desk-fruit.svg"} className={"position-absolute top-0 l-0"}
+                                   width={354}
+                                   loading={"lazy"}
+                                   quality={100}
+                                   style={{scale: "1.2"}}
+                                   height={233} alt={""}/>
 
                             <div className={"w-100 d-flex align-items-center justify-content-center p-2"}>
                                 {!request?.status && (
                                     <button onClick={() => setIsModalOpen(true)} type={"button"}
-                                            style={{height: "48px" , width : "146px"}}
+                                            style={{height: "48px", width: "146px"}}
                                             className={"btn-accept  shadow-lg click-action  border-0 rounded-pill  fw-bold p-2 text-light z-index-2 h5"}>
                                         فال بگیر
                                     </button>
@@ -113,10 +115,12 @@ function Book({setStatusPopup}) {
                         </figure>
                         <figure
                             className={"w-100 d-none d-md-flex translate-middle-y align-items-end justify-content-center position-relative h-650px"}>
-                            <img src={"/img/book-desk-fruit.svg"} style={{objectFit: "cover"}}
-                                 className={"position-absolute w-auto "}
-                                 width={796}
-                                 height={500} alt={""}/>
+                            <Image src={"/img/book-desk-fruit.svg"} style={{objectFit: "cover"}}
+                                   className={"position-absolute w-auto "}
+                                   width={796}
+                                   loading={"lazy"}
+                                   quality={100}
+                                   height={500} alt={""}/>
 
                             <div className={"w-100 d-flex align-items-center justify-content-center p-2"}>
                                 {!request?.status && (
@@ -143,7 +147,7 @@ function Book({setStatusPopup}) {
                     {(request?.status === true && request?.status !== "OTP") && (
                         <button onClick={getFal}
                                 disabled={disableCounter}
-                                style={{height: "48px" , width : "146px"}}
+                                style={{height: "48px", width: "146px"}}
                                 className={`${disableCounter && 'bg-secondary'} col-9 rounded-pill h5 cursor-pointer click-action col-xl-4 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
                                 title={request?.status ? "" : "ابتدا ثبت نام کنید"}>فال بگیر
                         </button>
