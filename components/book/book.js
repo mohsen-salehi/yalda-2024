@@ -1,14 +1,17 @@
 import React, {useState} from 'react';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Image from "next/image";
 import ResponsiveOTPModal from "../modal/ResponsiveModal";
+import requestSlice from "../../redux/reducers/auth/requestSlice";
 
 function Book({setStatusPopup}) {
-
+    const {requestOTP ,  requestFailed} = requestSlice.actions;
     const [classStatus, setClassStatus] = useState('')
     const [disableCounter, setDisableCounter] = useState(false)
     const {request} = useSelector(state => state)
     const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const dispatch = useDispatch();
 
     const getFal = () => {
 
@@ -30,7 +33,7 @@ function Book({setStatusPopup}) {
                 {request?.status && request?.status !== "OTP" ? (
                     <ul className="align background-desk d-flex justify-content-center align-items-center p-0 m-0">
                         <li className={classStatus ? "d-flex justify-content-center align-items-center stage" : "d-flex justify-content-center align-items-center"}>
-                            <figure className={classStatus ? 'open book l-25' : "book"}>
+                            <figure className={classStatus ? 'open book l-20' : "book"}>
 
                                 <ul className='hardcover_front'>
                                     <li>
@@ -150,7 +153,8 @@ function Book({setStatusPopup}) {
                 <ResponsiveOTPModal
                     status={request?.status}
                     isModalOpen={isModalOpen}
-                    onClose={() => setIsModalOpen(false)}
+                    setIsModalOpen={setIsModalOpen}
+                    onClose={() => dispatch(requestFailed())}
                 />
             </div>
         </>
