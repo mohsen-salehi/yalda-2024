@@ -10,7 +10,7 @@ function MyApp({Component, pageProps}) {
         <>
             <Head>
                 <title>هم فاله،هم هدیه | جشنواره چله پر تخفیف الانزا</title>
-                <meta name="theme-color" content="#FF304E"/>
+                <meta name="theme-color" content="#13152B"/>
                 <meta property="og:image" itemProp="image"
                       content="https://elanza.com/assets/global/favicon/og_image.png"/>
                 <link rel='canonical' href='https://landing.elanza.com/yalda'/>
