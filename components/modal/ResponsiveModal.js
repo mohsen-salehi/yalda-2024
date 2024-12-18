@@ -24,7 +24,8 @@ function ResponsiveModal({
     return (
         <section
             role="dialog"
-            className={'vw-100 m-0 d-flex z-index-2 align-items-center justify-content-center position-fixed t-0 l-0 vh-100 bg-black bg-opacity-50'}>
+            style={{zIndex : 10000}}
+            className={'vw-100 m-0 d-flex  align-items-center justify-content-center position-fixed t-0 l-0 vh-100 bg-black bg-opacity-50'}>
 
             {!status && (
                 <div
