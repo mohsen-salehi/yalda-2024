@@ -31,9 +31,9 @@ function Book({setStatusPopup}) {
         <>
             <div className="component d-flex align-items-center flex-wrap">
                 {request?.status && request?.status !== "OTP" ? (
-                    <ul className="align background-desk d-flex justify-content-center align-items-center p-0 m-0">
+                    <ul className="align background-desk d-flex justify-content-center pt-3 align-items-center p-0 m-0">
                         <li className={classStatus ? "d-flex justify-content-center align-items-center stage" : "d-flex justify-content-center align-items-center"}>
-                            <figure className={classStatus ? 'open book l-20' : "book"}>
+                            <figure className={classStatus ? 'open book l-20' : "book mb-5"}>
 
                                 <ul className='hardcover_front'>
                                     <li>
@@ -138,7 +138,7 @@ function Book({setStatusPopup}) {
                     {(request?.status === true && request?.status !== "OTP") && (
                         <button onClick={getFal}
                                 disabled={disableCounter}
-                                className={`${disableCounter && 'bg-secondary'} col-9 h-50px rounded-pill h5 cursor-pointer click-action col-xl-4 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
+                                className={`${disableCounter ? 'bg-secondary' : " btn-accept "} col-9 h-50px rounded-pill h5 cursor-pointer click-action col-xl-4 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
                                 title={request?.status ? "" : "ابتدا ثبت نام کنید"}>فال بگیر
                         </button>
                     )}
@@ -148,7 +148,7 @@ function Book({setStatusPopup}) {
                         <button onClick={getFal}
                                 disabled={disableCounter}
                                 style={{height: "48px", width: "146px"}}
-                                className={`${disableCounter && 'bg-secondary'} col-9 rounded-pill h5 cursor-pointer click-action col-xl-4 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
+                                className={`${disableCounter ? 'bg-secondary' : " btn-accept "} col-9 rounded-pill h5 cursor-pointer click-action col-xl-4 border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
                                 title={request?.status ? "" : "ابتدا ثبت نام کنید"}>فال بگیر
                         </button>
                     )}

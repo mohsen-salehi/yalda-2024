@@ -31,7 +31,7 @@ function Index({setStatusPopup, setStatusInvite}) {
         } , 500)
     },[request])
 
-    return (<div className="popup m-auto m-xl-0 font-pinar">
+    return (<div style={{zIndex : 10000}} className="popup m-auto m-xl-0 font-pinar">
         <div className="section  col-11 p-0 col-xl-4 h-75 d-flex justify-content-center align-content-center flex-wrap ">
             <figure
                 className="col-11 col-md-5 col-xl-9  d-flex flex-wrap justify-content-center align-items-center position-relative">
