@@ -17,7 +17,7 @@ function ResponsiveModal({
 
     useEffect(() => {
         if (status && status !== "OTP") {
-            onClose()
+            setIsModalOpen(false)
         }
     }, [status]);
 
