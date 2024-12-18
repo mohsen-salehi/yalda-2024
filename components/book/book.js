@@ -30,7 +30,7 @@ function Book({setStatusPopup}) {
                 {request?.status && request?.status !== "OTP" ? (
                     <ul className="align background-desk d-flex justify-content-center align-items-center p-0 m-0">
                         <li className={classStatus ? "d-flex justify-content-center align-items-center stage" : "d-flex justify-content-center align-items-center"}>
-                            <figure className={classStatus ? 'open book ' : "book"}>
+                            <figure className={classStatus ? 'open book l-25' : "book"}>
 
                                 <ul className='hardcover_front'>
                                     <li>
@@ -93,24 +93,25 @@ function Book({setStatusPopup}) {
                     <>
                         <figure className={"w-100 d-flex d-md-none align-items-end position-relative"}
                                 style={{height: "400px"}}>
-                            <img src={"/img/book-desk-fruit.svg"} className={"position-absolute  top-0 l-0"}
+                            <img src={"/img/book-desk-fruit.svg"} className={"position-absolute top-0 l-0"}
                                  width={354}
+                                 style={{scale : "1.2"}}
                                  height={233} alt={""}/>
 
                             <div className={"w-100 d-flex align-items-center justify-content-center p-2"}>
                                 {!request?.status && (
                                     <button onClick={() => setIsModalOpen(true)} type={"button"}
-                                            style={{height: "40px"}}
-                                            className={"btn-accept col-7 col-xl-4 shadow-lg click-action  border-0 rounded-pill  fw-bold p-2 text-light z-index-2 h5"}>
+                                            style={{height: "48px" , width : "146px"}}
+                                            className={"btn-accept  shadow-lg click-action  border-0 rounded-pill  fw-bold p-2 text-light z-index-2 h5"}>
                                         فال بگیر
                                     </button>
                                 )}
                             </div>
                         </figure>
                         <figure
-                            className={"w-100 d-none d-md-flex translate-middle-y align-items-end position-relative h-650px"}>
+                            className={"w-100 d-none d-md-flex translate-middle-y align-items-end justify-content-center position-relative h-650px"}>
                             <img src={"/img/book-desk-fruit.svg"} style={{objectFit: "cover"}}
-                                 className={"position-absolute top-0 l-0"}
+                                 className={"position-absolute w-auto "}
                                  width={796}
                                  height={500} alt={""}/>
 
@@ -139,7 +140,7 @@ function Book({setStatusPopup}) {
                     {(request?.status === true && request?.status !== "OTP") && (
                         <button onClick={getFal}
                                 disabled={disableCounter}
-                                style={{height: "40px"}}
+                                style={{height: "48px" , width : "146px"}}
                                 className={`${disableCounter && 'bg-secondary'} col-9 rounded-pill h5 cursor-pointer click-action col-xl-4 btn-accept border-0 rounded fw-bold p-2 text-light z-index-2 h5`}
                                 title={request?.status ? "" : "ابتدا ثبت نام کنید"}>فال بگیر
                         </button>

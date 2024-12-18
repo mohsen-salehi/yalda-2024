@@ -1,15 +1,17 @@
 import React from 'react';
 import Book from "../book/book";
 import Image from "next/image";
+import Link from "next/link";
 
 function Index({setStatusPopup}) {
 
     return (<>
             <section className="top-section d-flex justify-content-center align-items-center align-items-md-start">
-                <img src="/img/cover-barf.svg" className="img-hendevaneh l-0 top-0 opacity-50 disabled col-12 d-none d-md-block "
-                     alt=""/>
-                <img src="/img/cover-barf.svg" className="img-hendevaneh l-0 top-0  disabled col-12 d-md-none"
-                     alt=""/>
+                <div className={"col-12 position-absolute d-flex align-items-center justify-content-end px-md-4 pt-3 fixed-top p-2"}>
+                    <Link href={"https://elanza.com"} target={"_blank"} style={{color : "#FF7745"}} className={"btn btn-light rounded-pill"}>
+                        ورود به سایت
+                    </Link>
+                </div>
                 <figure
                     className={"d-md-none d-flex  position-relative bg-cover-bard-2 align-items-center justify-content-center col-12 p-0 "}>
                     <img src="/img/barf.png"
@@ -18,10 +20,10 @@ function Index({setStatusPopup}) {
                          className="position-absolute z-index-10 l-5 t-30 " alt=""/>
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10 rotate-anime t-50 l-10" alt=""/>
+                         className="position-absolute z-index-10 rotate-anime t-60 l-20" alt=""/>
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10  rotate-anime t-70 l-5  " alt=""/>
+                         className="position-absolute z-index-10  rotate-anime t-70 l-5" alt=""/>
                     <img src="/img/barf.png"
                          width={50}
                          className="position-absolute z-index-10  rotate-anime  top-100 l-10  " alt=""/>
@@ -30,16 +32,16 @@ function Index({setStatusPopup}) {
 
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10  rotate-anime r-0 t-30" alt=""/>
+                         className="position-absolute z-index-10  rotate-anime r-20 t-30" alt=""/>
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10  rotate-anime  t-50 r-10  " alt=""/>
+                         className="position-absolute z-index-10  rotate-anime  t-50 r-5  " alt=""/>
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10  rotate-anime  t-70 r-5  " alt=""/>
+                         className="position-absolute z-index-10  rotate-anime  t-70 r-20  " alt=""/>
                     <img src="/img/barf.png"
                          width={50}
-                         className="position-absolute z-index-10  rotate-anime  top-100 r-10  " alt=""/>
+                         className="position-absolute z-index-10  rotate-anime  top-100 r-5  " alt=""/>
                 </figure>
 
                 <figure
@@ -47,7 +49,7 @@ function Index({setStatusPopup}) {
                     <img src="/img/barf.png"
                          width={120}
                          height={120}
-                         className="position-absolute z-index-10 l-5 t-50 img4 " alt=""/>
+                         className="position-absolute z-index-10 l-5 t-0 img4 " alt=""/>
                     <img src="/img/barf.png"
                          width={120}
                          className="position-absolute z-index-10 rotate-anime top-100 l-10  " alt=""/>

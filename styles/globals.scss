@@ -3,6 +3,7 @@
 
 body, html, main {
   scroll-behavior: smooth !important;
+  scrollbar-width: none;
 }
 
 input, select {
@@ -21,7 +22,9 @@ img {
 }
 
 .main {
-  background: linear-gradient(180deg, #13152B 0%, #252A71 100%);
+  background:
+          url("../public/img/cover-barf.svg") no-repeat center/cover,
+          linear-gradient(180deg, #13152B 0%, #252A71 100%);
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -63,7 +66,7 @@ img {
     background-size: 100%, 100%;
     background-position: top;
     background-repeat: no-repeat;
-    //background-attachment: fixed;
+    background-attachment: fixed;
     z-index: 2;
   }
   .img1 {
@@ -1337,6 +1340,9 @@ img {
 .t-50 {
   top: 50%;
 }
+.t-60 {
+  top: 60%;
+}
 .t-70 {
   top: 70%;
 }
@@ -1355,6 +1361,9 @@ img {
 }
 .l-20 {
   left: 20%;
+}
+.l-25 {
+  left: 25%;
 }
 .l-30 {
   left: 30%;
